@@ -1,0 +1,1 @@
+register.view.test.js

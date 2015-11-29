@@ -1,0 +1,32 @@
+<div class="wrapperQuestions">
+  <div class="blockQuestions">
+    <ul>
+      <li ng-repeat="question in questions() | AssocArrayGen:vm.eqQuestionQuery | orderBy:vm.questionsOrderProp" class="frnap wrapperQuestion">
+        <div class="f100p blockVidQst">{{question.text}}</div>
+        <div class="f100p blockVidQstMenu">
+          #Asking: {{question.votes}}
+          <button ng-if="!vm.isCaster()" ng-click="vm.userVoteQuestion(question,onVote)"><img src="assets/img/join_ask.png" width="16" height="16" alt="submit" /></button>
+          <button ng-if="vm.isCaster()" ng-click="vm.casterDeleteQuestion(question,onDelete)"><img src="assets/img/delete.png" width="16" height="16" alt="submit" /></button>
+          <button ng-if="vm.isCaster()" ng-click="vm.casterHideQuestion(question)"><img src="assets/img/hide.png" width="16" height="16" alt="submit" /></button>
+      </div>
+      </li>
+    </ul>
+  </div>
+  <div class="blockQuestionsMenu">
+    <div ng-if="vm.showSearch()">
+      <!-- Questions List -->
+      <div><b>Questions</b> Sort by:
+      <select class="inputQuestionSort" ng-model="vm.questionsOrderProp">
+        <option value="text">Alphabetical</option>
+        <option value="age">Newest</option>
+      </select></div>
+      Search: <input ng-model="vm.questionQuery">
+    </div>
+    <div ng-if="!vm.isCaster()">
+      <div>Add Question</div>
+      <textarea ng-model="vm.questionText" class="askQuestionText"></textarea>
+      <button ng-click="vm.userAskQuestion()">Ask</button>
+      <button ng-if="vm.isCaster()" ng-click="vm.casterUnhideAllQuestions()"><img src="assets/img/show.png" width="16" height="16" alt="submit" /></button>
+    </div>
+  </div>
+</div>

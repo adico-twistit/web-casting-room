@@ -1,0 +1,12 @@
+<div class="roomMessageDeco">
+    <div ng-if="!vm.roomInEditMode">{{ roomInfo.message }} 
+        <button ng-if="vm.isCaster()" ng-click="vm.casterEditRoom()">
+            <img src="assets/img/edit.png" width="16" height="16" alt="submit" />
+        </button>
+    </div>
+    <form ng-if="vm.roomInEditMode">
+        <label for="title">Room Title</label> <input ng-model="roomInfo.title" name="title" type="text">
+        <label for="message">Room Message</label> <textarea ng-model="roomInfo.message" name="message" />
+        <button ng-click="vm.casterUpdateRoom()">Update</button><button ng-click="vm.casterCancelEditRoom()">Cancel</button>
+    </form>
+</div>

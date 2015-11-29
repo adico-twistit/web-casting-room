@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="webcastApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="webcastApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="webcastApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="webcastApp" class="no-js"> <!--<![endif]-->
+<head>
+  <base href="/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title ng-bind-template="Webcast: {{webcastName}}">Webcast</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="assets/css/video.css">
+  <link rel="stylesheet" href="assets/css/video.questions.css">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <div ng-view></div>
+  <!--[if lte IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/Base64/0.3.0/base64.min.js"></script>
+  <![endif]-->
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+  <script src="app.js"></script>
+  <script src="modules/beforeUnload.module.js"></script>
+  <script src="services/authentication.service.js"></script>
+  <script src="services/flash.service.js"></script>
+  <script src="services/account.service.js"></script>
+  <script src="services/room.service.js"></script>
+  <script src="services/user.service.js"></script>
+  <script src="services/socketio.service.js"></script>
+  <script src="filters/AssocArrayGen.filter.js"></script>
+  <script src="bower_components/satellizer/satellizer.js"></script>
+  <script src="video/video.controller.js"></script>
+  <script src="home/home.controller.js"></script>
+  <script src="login/login.controller.js"></script>
+  <script src="logout/logout.controller.js"></script>
+  <script src="register/register.controller.js"></script>
+  <script src="video/components/roommsg/ctrl.js"></script>
+  <script src="video/components/speaker/ctrl.js"></script>
+  <script src="video/components/users/ctrl.js"></script>
+  <script src="video/components/questions/ctrl.js"></script>
+</body>
+</html>

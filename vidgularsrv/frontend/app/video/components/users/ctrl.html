@@ -1,0 +1,20 @@
+<div>Users Connected: {{ vm.connectedUsersNum }}</div>
+Search: <input ng-model="vm.userQuery" class="qstSrcBox"><br/>
+Sort by:
+<select ng-model="vm.usersOrderProp">
+  <option value="username">Alphabetical</option>
+  <option value="age">Newest</option>
+</select>
+<button ng-click="vm.casterUnblockAllUser()"><img src="assets/img/show.png" alt="submit" /></button>
+<ul>
+  <li ng-repeat="(userid, user) in users() | AssocArrayGen:vm.eqUserQuery | orderBy:vm.usersOrderProp" class="wrapperUser">{{user.email}} 
+    <!- raise hand user -->
+    <img ng-if="vm.showRaiseHandAsImg(user)" src="assets/img/raise_hand.png" />
+    <!- raise hand caster -->
+    <button ng-if="vm.showRaiseHandAsBtn(user)" ng-click="vm.casterGrantPerm(user)" ng-mouseover="vm.changeImgToMic()" ng-mouseout="vm.changeImgToRaiseHand()"><img ng-src="{{vm.speakPermImg}}" /></button>
+    <button ng-if="vm.showMuteButton(user)" ng-click="vm.casterRevokePerm(user)"><img ng-src="assets/img/mute.png" /></button>
+    <img ng-if="vm.isApplause(user)" src="assets/img/applause.png" />
+    <!- caster revoke speak permission -->
+    <button ng-click="vm.casterBlockUser(user)"><img src="assets/img/hide.png" /></button>
+  </li>
+</ul>

@@ -1,0 +1,14 @@
+[
+    {
+        "url": "#/home", 
+        "name": "Home"
+    },
+    {
+        "url": "#/video", 
+        "name": "Video"
+    },
+    {
+        "url": "#/logout", 
+        "name": "Logout"
+    }
+]

@@ -1,0 +1,54 @@
+/* video wrapper */
+.flexRowWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flexColWrap {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.flexRowNoWrap {
+  display: flex;
+  flex-flow: row no-wrap;
+}
+
+/* We tell all items to be 100% width */
+.userActions, .mainVideo, .casterActions {
+  flex: 1 100%;
+  color: white;
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell all blocks to share a row */
+  .wrapperVideo {
+    flex-flow: row no-wrap;
+  }
+
+  .actions { flex: 0 0 120px; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  .mainVideo { flex: 2 0px; order: 2; }
+  .userActions { order: 1; }
+  .casterActions { order: 3; }
+  .wrapperVideo {
+    justify-content: space-around;
+  }
+
+}
+
+video {
+    border:0px;width:640px;height:360px;
+}
+
+.actions button {
+    color: black;
+    width: 100px;
+}

@@ -1,0 +1,155 @@
+[
+    {
+        "age": 0, 
+        "id": "adico", 
+        "imageUrl": "img/phones/motorola-xoom-with-wi-fi.0.jpg", 
+        "name": "Adi Cohen", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis officia officiis modi aperiam, recusandae sint porro libero unde qui magni vitae perspiciatis hic, maiores est odit pariatur, aspernatur veniam numquam!"
+    }, 
+    {
+        "age": 1, 
+        "id": "golch", 
+        "imageUrl": "img/phones/motorola-xoom.0.jpg", 
+        "name": "XOOM", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, aliquid. Doloribus quaerat expedita impedit, et soluta? Distinctio, et nihil quis, placeat voluptas ea reiciendis ad temporibus harum porro fuga tempore?"
+    }, 
+    {
+        "age": 2, 
+        "carrier": "bitunk", 
+        "id": "motorola-atrix-4g", 
+        "imageUrl": "img/phones/motorola-atrix-4g.0.jpg", 
+        "name": "ATRIX", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nobis debitis excepturi distinctio perspiciatis deleniti, maiores quaerat eos expedita vero repellat, qui aliquid dignissimos dolorem dolores facere neque accusamus repudiandae."
+    }, 
+    {
+        "age": 3, 
+        "id": "wowfee", 
+        "imageUrl": "img/phones/dell-streak-7.0.jpg", 
+        "name": "Streak", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni consequuntur ullam quod, aliquid deleniti dolore similique obcaecati natus iusto laboriosam excepturi ex tenetur distinctio incidunt veritatis voluptatibus earum aut nulla!"
+    }, 
+    {
+        "age": 4, 
+        "carrier": "Cellular South", 
+        "id": "gem", 
+        "imageUrl": "img/phones/samsung-gem.0.jpg", 
+        "name": "Samsung Gem\u2122", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 5, 
+        "carrier": "Dell", 
+        "id": "venue", 
+        "imageUrl": "img/phones/dell-venue.0.jpg", 
+        "name": "Dell Venue", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 6, 
+        "carrier": "Best Buy", 
+        "id": "nexus", 
+        "imageUrl": "img/phones/nexus-s.0.jpg", 
+        "name": "Nexus S", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 7, 
+        "carrier": "Cellular South", 
+        "id": "axis", 
+        "imageUrl": "img/phones/lg-axis.0.jpg", 
+        "name": "LG Axis", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 8, 
+        "id": "tab", 
+        "imageUrl": "img/phones/samsung-galaxy-tab.0.jpg", 
+        "name": "Samsung", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 9, 
+        "carrier": "Cellular South", 
+        "id": "galaxy", 
+        "imageUrl": "img/phones/samsung-showcase-a-galaxy-s-phone.0.jpg", 
+        "name": "Samsung Showcase\u2122 a Galaxy S\u2122 phone", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 10, 
+        "carrier": "Verizon", 
+        "id": "droid", 
+        "imageUrl": "img/phones/droid-2-global-by-motorola.0.jpg", 
+        "name": "DROID\u2122 2 Global by Motorola", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 11, 
+        "carrier": "Verizon", 
+        "id": "pro", 
+        "imageUrl": "img/phones/droid-pro-by-motorola.0.jpg", 
+        "name": "DROID\u2122 Pro by Motorola", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 12, 
+        "carrier": "AT&T", 
+        "id": "bravo", 
+        "imageUrl": "img/phones/motorola-bravo-with-motoblur.0.jpg", 
+        "name": "MOTOROLA BRAVO\u2122 with MOTOBLUR\u2122", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 13, 
+        "carrier": "T-Mobile", 
+        "id": "defy", 
+        "imageUrl": "img/phones/motorola-defy-with-motoblur.0.jpg", 
+        "name": "Motorola DEFY\u2122 with MOTOBLUR\u2122", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 14, 
+        "carrier": "T-Mobile", 
+        "id": "mytouch", 
+        "imageUrl": "img/phones/t-mobile-mytouch-4g.0.jpg", 
+        "name": "T-Mobile myTouch 4G", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 15, 
+        "carrier": "US Cellular", 
+        "id": "mesmerize", 
+        "imageUrl": "img/phones/samsung-mesmerize-a-galaxy-s-phone.0.jpg", 
+        "name": "Mesmerize", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 16, 
+        "carrier": "Sprint", 
+        "id": "zio", 
+        "imageUrl": "img/phones/sanyo-zio.0.jpg", 
+        "name": "SANYO", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 17, 
+        "id": "samsung-transform", 
+        "imageUrl": "img/phones/samsung-transform.0.jpg", 
+        "name": "Samsung Transform\u2122", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 18, 
+        "id": "t-mobile-g2", 
+        "imageUrl": "img/phones/t-mobile-g2.0.jpg", 
+        "name": "T-Mobile G2", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }, 
+    {
+        "age": 19, 
+        "id": "motorola-charm-with-motoblur", 
+        "imageUrl": "img/phones/motorola-charm-with-motoblur.0.jpg", 
+        "name": "Motorola CHARM\u2122 with MOTOBLUR\u2122", 
+        "bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo voluptates pariatur unde, ducimus at id obcaecati dolorem assumenda reiciendis, aperiam culpa odit fugiat sequi, soluta deleniti natus architecto quas ratione."
+    }
+]

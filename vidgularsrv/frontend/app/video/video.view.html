@@ -1,0 +1,68 @@
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div class="wrapper" >
+    <header class="header">
+      Video Room <ul class="menu">
+        <li ng-repeat="page in vm.pages"><a href="{{page.url}}">{{page.name}}</a></li>
+      </ul>
+    </header>
+    <article class="main" style="text-align:center">
+      <!-- Webcast Main -->
+      <div class="wrapperVideo decoVideo">
+        <article class="mainVideo">
+          <video id="myVideo"></video>
+          <script src="gumwrapper.js"></script>
+          <script>
+          (function() {
+              function showSuccess(video) {
+                  alert('Hey, it works! Dimensions: ' + video.videoWidth + ' x ' + video.videoHeight);
+              }
+              function showError(error) {
+                  alert('Oops: ' + error.message);
+              }
+              var gum = new GumWrapper({video: 'myVideo'}, showSuccess, showError);
+          })();
+          </script>
+        </article>
+        <div ng-if="!vm.isCaster()" class="userActions actions">
+          <!-- Actions Menu : Appluase, Raise Hand, ... -->
+          Actions :<br/>
+            <button ng-click="vm.userApplause()">Appluase</button> 
+            <button ng-click="vm.userRaiseHand()">Raise Hand</button> 
+            <button ng-click="vm.userLowerHand()">Lower Hand</button>
+        </div>
+        <div ng-if="vm.isCaster()" class="casterActions actions">
+          <!-- Actions Menu : Appluase, Raise Hand, ... -->
+          Streaming: 
+            <button ng-click="gum.play();">Play</button> 
+            <button ng-click="vm.streamingStop()">Stop</button> 
+            <button ng-click="vm.streamCamera()">Camera</button>
+            <button ng-click="vm.streamFile()">File</button>
+            <button ng-click="vm.streamDevice()">Device</button>
+        </div>
+      </div>
+      <aside class="extra decoQuestions" style="text-align:left">
+        <vgs-questions questions="vm.questions" is-caster="vm.isCaster" on-ask="vm.userAskQuestion" on-vote="vm.userVoteQuestion" on-unvote="vm.userUnvoteQuestion" on-delete="vm.casterDeleteQuestion"></vgs-questions>
+      </aside>
+    </article>
+    <aside class="aside aside-1">
+      <vgs-room-message on-update="vm.roomMessageUpdated" is-caster="vm.isCaster" room-info="vm.roomInfo"></vgs-room-message>
+    </aside>
+    <aside class="aside aside-2">
+      <div>
+        <vgs-speaker speaker="vm.currentSpeaker"></vgs-speaker>
+      </div>
+      <!-- Users List -->
+      <div class="decoUserList">
+        <vgs-users users="vm.connectedUsers" me="vm.thisUser" speaker="vm.currentSpeaker" is-caster="vm.isCaster" on-grant="vm.casterGrantPerm" on-revoke="vm.casterRevokePerm"></vgs-users>
+      </div>
+    </aside>
+    <footer class="footer">Copyright 2015</footer>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    //var socket = io('http://localhost:3000/users');
+  </script>

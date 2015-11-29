@@ -1,0 +1,164 @@
+p,ul {
+  padding: 0px;
+  margin: 0px;
+}
+/* app css stylesheet */
+.container {
+  display: flex; /* or inline-flex */
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/* Large */
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  /* This aligns items to the end line on main-axis */
+  justify-content: flex-end;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
+  }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .navigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* We tell all items to be 100% width */
+.header, .main, .nav, .aside, .footer, .extra {
+  flex: 1 100%;
+  border: 1px solid lightgray;
+}
+
+/* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 2. nav
+ * 3. main
+ * 4. aside
+ * 5. footer
+ */
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row */
+  .aside { flex: 0 0 210px; }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  .main { flex: 2 0px; }
+  
+  .aside-1 { order: 1; }
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .extra   { order: 4; }
+  .footer  { order: 5; }
+  .wrapper {
+    justify-content: space-around;
+  }
+  
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 0;
+  padding: 0;
+  display: inline;
+  font-weight: bold;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.qstSrcBox{
+  width: 150px;
+}
+
+.decoVideo {
+  background: black;
+}
+
+.decoQuestions {
+  background: silver;
+}
+
+.currentSpeakerDeco {
+  width: 13em; 
+  background: gold; 
+  word-wrap: break-word;
+  padding:3px
+}
+
+.roomMessageDeco {
+  width: 13em; 
+  background: blue;
+  font: normal small-caps normal 16px/1.4 Georgia;
+  color: white;
+  word-wrap: break-word;
+  padding:3px
+}
+
+.roomMessageDeco input, .roomMessageDeco textarea {
+  color: black;
+}
+
+.decoUserList {
+  background: lightblue;
+}
+
+.decoUserList button {
+  height: 22px;
+  width: 22px;
+  padding: 1px 6px 1px 6px;
+}
+
+.decoUserList img {
+  margin: -10px 0 0 -5px;
+  padding: 0;
+  height: 16px;
+  width: 16px;
+}
+
+/* Add this to align vertically */
+.decoUserList button > img,
+.decoUserList button > span {
+  vertical-align: middle;
+}

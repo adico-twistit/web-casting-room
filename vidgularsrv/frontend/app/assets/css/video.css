@@ -1,0 +1,92 @@
+/* video wrapper */
+.frnap, .wrapperVideo, .wrapperQuestions {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+/* We tell all items to be 100% width */
+.f100p .userActions, .mainVideo, .casterActions, .blockQuestions, .blockQuestionsMenu {
+  flex: 1 100%;
+}
+
+.userActions, .mainVideo, .casterActions {
+  color: white;
+}
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+  /* We tell all blocks to share a row */
+  .frnap, .wrapperVideo, .wrapperQuestions {
+    flex-flow: row no-wrap;
+  }
+
+  .actions { flex: 0 0 120px; }
+  .blockQuestionsMenu { flex: 0 0 240px; }
+  .blockVidQstMenu { flex: 0 0 90px; }
+
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+  /* We invert order of first sidebar and main
+   * And tell the main element to take twice as much width as the other two sidebars 
+   */
+  .mainVideo { flex: 2 0px; order: 2; }
+  .userActions { order: 1; }
+  .casterActions { order: 3; }
+
+  .frnap, .wrapperVideo, .wrapperQuestions {
+    justify-content: space-around;
+  }
+
+  .blockQuestions { flex: 3 0px; order: 1; }
+  .blockQuestionsMenu { order: 2; }
+
+  .blockVidQst { flex: 4 0px; order: 1; }
+  .blockVidQstMenu { order: 2; }
+}
+
+video {
+    border:0px;width:640px;height:360px;
+}
+
+.roomMessageDeco button {
+    color: black;
+}
+
+.actions button {
+    color: black;
+    width: 100px;
+}
+
+.askQuestionText {
+    width:230px;
+    height:90px;
+}
+
+.inputQuestionSort {
+    width:80px;
+}
+
+.wrapperQuestion {
+  border: 1px solid gray;
+}
+.blockQuestions ul{
+  margin:0;
+  padding:0;
+}
+.blockQuestions li{
+  padding:3px;
+}
+.blockVidQst {
+}
+
+.blockVidQstMenu {
+  padding: 3px;
+}
+
+.wrapperUser {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
