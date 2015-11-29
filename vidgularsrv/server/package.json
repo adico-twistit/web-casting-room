@@ -1,0 +1,41 @@
+{
+  "name": "vidgularsrv",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "SET NODE_ENV=production&& node ./bin/www",
+    "startdev": "SET NODE_ENV=development&& node --debug ./bin/www",
+    "startdevbrk": "SET NODE_ENV=development&& node --debug-brk ./bin/www",
+    "test": "./node_modules/.bin/jasmine-node test/spec",
+    "testdbg": "SET NODE_ENV=development&& node --debug-brk ./node_modules/jasmine-node/lib/jasmine-node/cli.js test/spec/models/RepositorySpec.js"
+  },
+  "dependencies": {
+    "assert-plus": "^0.2.0",
+    "async": "^1.4.2",
+    "bcryptjs": "^2.2.1",
+    "body-parser": "^1.14.1",
+    "colors": "^1.1.2",
+    "connect-redis": "^3.0.1",
+    "cookie-parser": "^1.4.0",
+    "cors": "^2.7.1",
+    "debug": "^2.2.0",
+    "ejs": "*",
+    "express": "~4.9.0",
+    "express-session": "^1.12.1",
+    "ioredis": "^1.10.0",
+    "jasmine-node": "^1.14.5",
+    "jwt-simple": "^0.3.1",
+    "moment": "^2.10.6",
+    "mongoose": "^4.2.4",
+    "morgan": "^1.6.1",
+    "q": "^1.4.1",
+    "redis": "^2.3.0",
+    "request": "^2.61.0",
+    "serve-favicon": "^2.3.0",
+    "session.socket.io": "^0.2.1",
+    "socket.io": "^1.3.7",
+    "socket.io-express-session": "^0.1.3",
+    "socket.io-redis": "^0.1.4",
+    "sticky-session": "^1.0.2"
+  }
+}

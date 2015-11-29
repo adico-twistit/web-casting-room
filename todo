@@ -1,0 +1,101 @@
+Coding Practices
+
+- Error
+--- programming errors
+--- functionality errors
+--- validations feedback
+
+Response
+--- Error response
+--- Success Response
+--- Angular
+--- API
+
+add version to api
+
+
+
+- Make all async promise based
+- How can I split UserSocket? Should I?
+- Testing?
+- Deployment - minimization ...
+
+
+
+handling error = https://www.joyent.com/developers/node/design/errors
+
+
+db creating undefined keys under room (create user)
+"undefined:users:56466a8a9a4dde5c0ec4a072"
+"undefined:state"
+
+save data on redis? do I need that, why do I get Error: MISCONF Redis is configured to save RDB snapshots, but is currently not a
+ble to persist on disk. Commands that may modify the data set are disabled. Plea
+se check Redis logs for details about the error.
+
+server error: Error: EXECABORT Transaction discarded because of previous errors.
+ Something went wrong connecting the user!
+2XGXJzlJ9DMYoddgAABA disconnect
+server error: Error: EXECABORT Transaction discarded because of previous errors.
+ Something went wrong when leaving!
+ 
+ 
+vote/unvote - I voted should reflect which button to present the user, either vote or unvote
+last uses unvoting a question deletes it
+check vote/ unvote functionality
+applause should revoke after 1 min
+remove the caster from the connected users list
+
+need to save & reload room state, if someone reloads the page, should get back exactly to the same room status as everyone else.
+raise hand should expire after 5 min
+
+check connect reconnect disconnect of socket io
+
+if fields will be expired by redis, how can I be notified on those changes? - http://redis.io/topics/notifications
+
+giving permission to someone can be achieved only if the broadcaster has the permission. so first the broadcaster need to revoke a permission before giving to another
+so people can raise hand but it will be a button only if the broadcaster have the permission
+
+room expire after session end
+room configuration: room open at:, room close at:,
+
+Delete question by caster
+
+Questions filters
+User filters
+hide question 
+show all question
+hide user 
+show all users
+
+users connected bug
+
+
+users & current speaker - flexbox stretch boxes
+header,content, footer should be column first
+
+vendor specific for flex css
+
+split css better to components
+
+
+broadcast video/audio
+from broadcster to room
+from user to room
+
+manage rooms
+
+auto testing
+caching
+
+validations
+feedback on errors
+feedback on actions
+
+
+javascript - learn to best practice on input validation in all layers of the software
+
+
+
+how to make angular perform better, best practice setting up angular bindings while reducing the times a function is called until stabilized, postpone activation?
+
