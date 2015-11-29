@@ -1,7 +1,8 @@
 {
   "name": "vidgularsrv",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
+  "repository": "https://github.com/adico-twistit/web-casting-room.git",
   "scripts": {
     "start": "SET NODE_ENV=production&& node ./bin/www",
     "startdev": "SET NODE_ENV=development&& node --debug ./bin/www",
